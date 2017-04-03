@@ -14,7 +14,6 @@ import (
 	"github.com/BurntSushi/toml"
 	log "github.com/Sirupsen/logrus"
 	"gitlab.com/gitlab-org/gitlab-ci-multi-runner/helpers"
-	"gitlab.com/gitlab-org/gitlab-ci-multi-runner/helpers/docker"
 	"gitlab.com/gitlab-org/gitlab-ci-multi-runner/helpers/ssh"
 	"gitlab.com/gitlab-org/gitlab-ci-multi-runner/helpers/timeperiod"
 )
@@ -46,7 +45,6 @@ func (p DockerPullPolicy) Get() (DockerPullPolicy, error) {
 }
 
 type DockerConfig struct {
-	docker_helpers.DockerCredentials
 	Hostname               string           `toml:"hostname,omitempty" json:"hostname" long:"hostname" env:"DOCKER_HOSTNAME" description:"Custom container hostname"`
 	Image                  string           `toml:"image" json:"image" long:"image" env:"DOCKER_IMAGE" description:"Docker image to be used"`
 	CPUSetCPUs             string           `toml:"cpuset_cpus,omitempty" json:"cpuset_cpus" long:"cpuset-cpus" env:"DOCKER_CPUSET_CPUS" description:"String value containing the cgroups CpusetCpus to use"`

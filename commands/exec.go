@@ -15,11 +15,8 @@ import (
 	"gopkg.in/yaml.v2"
 
 	// Force to load all executors, executes init() on them
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/docker"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/parallels"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/shell"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/ssh"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/virtualbox"
 )
 
 type ExecCommand struct {

@@ -1,6 +1,5 @@
 package docker_helpers
 
-import "github.com/fsouza/go-dockerclient"
 
 type Client interface {
 	InspectImage(name string) (*docker.Image, error)

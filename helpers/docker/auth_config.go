@@ -9,7 +9,6 @@ import (
 	"strings"
 
 	"github.com/docker/docker/pkg/homedir"
-	"github.com/fsouza/go-dockerclient"
 )
 
 // DefaultDockerRegistry is the name of the index

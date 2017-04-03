@@ -12,13 +12,8 @@ import (
 
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/commands"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/commands/helpers"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/docker"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/docker/machine"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/kubernetes"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/parallels"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/shell"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/ssh"
-	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/executors/virtualbox"
 	_ "gitlab.com/gitlab-org/gitlab-ci-multi-runner/shells"
 )
 
